@@ -1,18 +1,15 @@
 #include <stdio.h>
 
 #define numout(a) printf("%d\n",a)
+#define numin(a) scanf("%d", &a)
+#define rep(i, n) for(int i = 0;i<n;i++)
 int main(void) {
- int a, b;
- scanf("%d", &a);
- scanf("%d", &b);
- if( b == 0){
-    printf("%s\n", "fraudulent number");
-    return 0;
- }
- numout(a + b);
- numout(a - b);
- numout(a * b);
- numout(a / b);
+    int d[5] = {41, 23, 8, 15, 33};
+    int ans = 0;
+    for(int i = 0;i<5;i++){
+        numout(d[i]);
+        ans += d[i];
+    }
 
- return 0;
+    numout(ans);
 }

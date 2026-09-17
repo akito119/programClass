@@ -2,17 +2,13 @@
 
 #define numout(a) printf("%d\n",a)
 #define numin(a) scanf("%d", &a)
+#define rep(i, n) for(int i = 0;i<n;i++)
 int main(void) {
- int a;
- printf("Tokuten? ");
- numin(a);
- if( a > 70){
-    printf("Seiseki A\n");
- }
- else if(a > 50){
-    printf("Seiseki B\n");
- }
- else{
-    printf("Seiseki C\n");
- }
+    int d[5] = {41, 23, 8, 15, 33};
+    int ans = d[0];
+
+    rep(i, 5){
+        ans = ans > d[i] ? d[i] : ans;
+    }
+    numout(ans);
 }

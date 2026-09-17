@@ -1,10 +1,18 @@
 #include <stdio.h>
-//改行しなくていいんですか
+
+#define numout(a) printf("%d\n",a)
+#define numin(a) scanf("%d", &a)
 int main(void) {
-    int a = 6;
-    int b = 2;
-    printf("%d", a + b);
-    printf("%d", a - b);
-    printf("%d", a * b);
-    printf("%d", a / b);
+ int a;
+ printf("Tokuten? ");
+ numin(a);
+ if( a > 70){
+    printf("Seiseki A\n");
+ }
+ else if(a > 50){
+    printf("Seiseki B\n");
+ }
+ else{
+    printf("Seiseki C\n");
+ }
 }
