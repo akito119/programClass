@@ -9,6 +9,8 @@ int main(void) {
     printf("%s\n", "fraudulent number");
     return 0;
  }
+
+ 
  numout(a + b);
  numout(a - b);
  numout(a * b);
